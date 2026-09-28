@@ -1,0 +1,903 @@
+/* =========================================================
+   IntegRA EWS
+   HERO BANNER
+   Sector Intelligence Rotator
+   ========================================================= */
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 650px;
+  overflow: hidden;
+  isolation: isolate;
+  background: #031c39;
+}
+
+/* =========================================================
+   BACKGROUND
+   ========================================================= */
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.04);
+  filter: saturate(0.85) contrast(1.05);
+}
+
+.hero-dark-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(2, 22, 46, 0.88) 0%,
+      rgba(3, 29, 58, 0.62) 35%,
+      rgba(3, 30, 60, 0.58) 65%,
+      rgba(2, 21, 44, 0.88) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(2, 22, 45, 0.25),
+      rgba(2, 20, 42, 0.72)
+    );
+}
+
+.hero-blue-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(90px);
+}
+
+.glow-left {
+  width: 420px;
+  height: 420px;
+  left: -180px;
+  top: 30%;
+  background: #087bd3;
+  opacity: 0.18;
+}
+
+.glow-right {
+  width: 400px;
+  height: 400px;
+  right: -160px;
+  bottom: -100px;
+  background: #00b8ff;
+  opacity: 0.14;
+}
+
+/* =========================================================
+   BACKGROUND SECTOR MARQUEE
+   ========================================================= */
+
+.ministry-marquee {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ministry-row {
+  position: absolute;
+  left: -5%;
+  width: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ministry-row-one {
+  top: 14%;
+}
+
+.ministry-row-two {
+  top: 38%;
+}
+
+.ministry-row-three {
+  top: 64%;
+}
+
+.ministry-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+
+  width: max-content;
+
+  animation: sectorMarquee 42s linear infinite;
+}
+
+.reverse-track {
+  animation-direction: reverse;
+  animation-duration: 48s;
+}
+
+.ministry-row-three .ministry-track {
+  animation-duration: 52s;
+}
+
+.ministry-track span {
+  color: rgba(176, 217, 245, 0.18);
+
+  font-size: clamp(13px, 1.35vw, 20px);
+  font-weight: 850;
+
+  letter-spacing: 1.5px;
+
+  filter: blur(1.6px);
+
+  text-transform: uppercase;
+}
+
+.ministry-track b {
+  color: rgba(34, 173, 246, 0.28);
+  font-size: 8px;
+}
+
+@keyframes sectorMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================================================
+   SIDE MESSAGES
+   ========================================================= */
+
+.hero-side-message {
+  position: absolute;
+  z-index: 7;
+
+  display: flex;
+  flex-direction: column;
+
+  color: rgba(221, 239, 252, 0.78);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  line-height: 1.8;
+}
+
+.hero-left-message {
+  left: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  padding-left: 12px;
+}
+
+.hero-right-message {
+  right: 45px;
+  top: 48%;
+  transform: translateY(-50%);
+
+  align-items: flex-start;
+}
+
+.hero-side-message .side-line {
+  width: 32px;
+  height: 1px;
+  margin: 8px 0;
+
+  background: rgba(74, 190, 247, 0.65);
+}
+
+.hero-right-message small {
+  margin-top: 6px;
+
+  color: rgba(193, 219, 238, 0.55);
+
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+
+.hero-right-message strong {
+  color: #29b8f7;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+/* =========================================================
+   MAIN HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 58px 120px 78px;
+}
+
+/* =========================================================
+   MIDDLE BOX
+   ========================================================= */
+
+.hero-card {
+  width: min(1040px, 88vw);
+
+  padding: 34px 52px 27px;
+
+  text-align: center;
+
+  border: 1px solid rgba(62, 186, 245, 0.5);
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(10, 67, 113, 0.97),
+      rgba(3, 36, 73, 0.98)
+    );
+
+  box-shadow:
+    0 35px 90px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.09);
+
+  backdrop-filter: blur(10px);
+}
+
+/* =========================================================
+   AI BADGE
+   ========================================================= */
+
+.hero-ai-badge {
+  width: fit-content;
+  margin: 0 auto;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 17px;
+
+  border-radius: 999px;
+
+  background: #108ce5;
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 0.5px;
+
+  box-shadow:
+    0 8px 24px rgba(14, 142, 229, 0.3);
+}
+
+.hero-ai-badge svg {
+  color: #ffffff;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.hero-title {
+  margin: 24px auto 9px;
+
+  max-width: 850px;
+
+  color: #ffffff;
+
+  font-size: clamp(36px, 4.3vw, 62px);
+
+  font-weight: 950;
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+}
+
+.hero-title span {
+  display: block;
+  color: #ffffff;
+}
+
+.hero-title strong {
+  display: block;
+
+  color: #20b5f5;
+
+  font-weight: 950;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.hero-description {
+  max-width: 730px;
+
+  margin: 17px auto 0;
+
+  color: #b9d1e6;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   SECTOR ROTATOR
+   ========================================================= */
+
+.sector-rotator {
+  width: min(700px, 100%);
+
+  margin: 24px auto 0;
+
+  padding: 12px 17px 13px;
+
+  border: 1px solid rgba(82, 187, 239, 0.25);
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.055);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+/* small heading */
+
+.sector-rotator-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  color: #7ed7ff;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 1.7px;
+}
+
+.sector-rotator-label svg {
+  color: #26b8fa;
+}
+
+/* sector name area */
+
+.sector-display {
+  position: relative;
+
+  min-height: 36px;
+
+  margin-top: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.sector-name-animation {
+  color: #ffffff;
+
+  font-size: clamp(16px, 1.65vw, 23px);
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  animation: sectorNameIn 0.65s ease both;
+}
+
+@keyframes sectorNameIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* counter */
+
+.sector-counter {
+  position: absolute;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  color: #5faed1;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.sector-counter span {
+  color: #416d89;
+}
+
+/* =========================================================
+   HERO METRICS
+   ========================================================= */
+
+.hero-metrics {
+  display: flex;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 17px;
+}
+
+.hero-metric {
+  min-width: 185px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 10px 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.055);
+
+  text-align: left;
+}
+
+.metric-icon {
+  width: 31px;
+  height: 31px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 7px;
+}
+
+.metric-icon.blue {
+  background: rgba(15, 145, 235, 0.14);
+  color: #20b7fa;
+}
+
+.metric-icon.green {
+  background: rgba(28, 208, 164, 0.12);
+  color: #2bd4ad;
+}
+
+.metric-icon.cyan {
+  background: rgba(47, 197, 255, 0.12);
+  color: #43caff;
+}
+
+.hero-metric strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.hero-metric span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #7695ad;
+
+  font-size: 7px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   NETWORK LABEL
+   ========================================================= */
+
+.hero-network-label {
+  margin-top: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  color: #62839c;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.hero-network-label svg {
+  color: #4aaedc;
+}
+
+/* =========================================================
+   ARROWS
+   ========================================================= */
+
+.hero-arrow {
+  position: absolute;
+  z-index: 10;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 49px;
+  height: 49px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(111, 197, 238, 0.4);
+  border-radius: 50%;
+
+  background: rgba(4, 30, 59, 0.78);
+
+  color: #ffffff;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.hero-arrow:hover {
+  background: #0a83d8;
+  border-color: #4bc6ff;
+
+  transform:
+    translateY(-50%)
+    scale(1.08);
+}
+
+.hero-prev {
+  left: 34px;
+}
+
+.hero-next {
+  right: 34px;
+}
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.hero-pagination {
+  position: absolute;
+
+  z-index: 12;
+
+  left: 50%;
+  bottom: 57px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.42);
+
+  transition:
+    width 0.25s ease,
+    background 0.25s ease;
+}
+
+.hero-dot.active {
+  width: 28px;
+
+  border-radius: 999px;
+
+  background: #25b5f5;
+}
+
+/* =========================================================
+   LIVE TICKER
+   ========================================================= */
+
+.hero-live-ticker {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 20;
+
+  min-height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  background: #031a34;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ticker-label {
+  flex: 0 0 auto;
+
+  min-height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 23px;
+
+  background: #ff8b00;
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.ticker-live-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 4px rgba(255, 255, 255, 0.15);
+
+  animation: tickerPulse 1.5s infinite;
+}
+
+@keyframes tickerPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.ticker-window {
+  flex: 1;
+
+  overflow: hidden;
+}
+
+.ticker-track {
+  display: inline-flex;
+  align-items: center;
+
+  width: max-content;
+
+  white-space: nowrap;
+
+  animation: tickerMove 40s linear infinite;
+
+  color: #a8c2d8;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.ticker-track i {
+  margin: 0 20px;
+
+  color: #1db8f4;
+
+  font-style: normal;
+}
+
+@keyframes tickerMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .hero-content {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .hero-card {
+    width: min(900px, 86vw);
+  }
+
+  .hero-side-message {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 45px;
+  }
+
+  .hero-metric {
+    min-width: 160px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .hero-banner {
+    min-height: 650px;
+  }
+
+  .hero-bg-image {
+    min-height: 650px;
+  }
+
+  .hero-content {
+    min-height: 650px;
+
+    padding: 35px 14px 80px;
+  }
+
+  .hero-card {
+    width: 100%;
+
+    padding: 25px 15px 21px;
+
+    border-radius: 15px;
+  }
+
+  .hero-ai-badge {
+    padding: 7px 11px;
+
+    font-size: 8px;
+  }
+
+  .hero-title {
+    margin-top: 18px;
+
+    font-size: 30px;
+
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    font-size: 10px;
+  }
+
+  .sector-rotator {
+    margin-top: 18px;
+  }
+
+  .sector-name-animation {
+    font-size: 14px;
+
+    letter-spacing: 0.5px;
+  }
+
+  .sector-counter {
+    display: none;
+  }
+
+  .hero-metrics {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .hero-metric {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  .hero-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-prev {
+    left: 7px;
+  }
+
+  .hero-next {
+    right: 7px;
+  }
+
+  .hero-pagination {
+    bottom: 59px;
+  }
+
+  .ticker-label {
+    padding: 0 10px;
+
+    font-size: 7px;
+  }
+
+  .ticker-track {
+    font-size: 7px;
+  }
+
+  .ministry-track span {
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 25px;
+  }
+
+  .hero-card {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero-ai-badge {
+    font-size: 7px;
+  }
+
+  .sector-name-animation {
+    font-size: 12px;
+  }
+}

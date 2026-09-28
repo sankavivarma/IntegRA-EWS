@@ -1,0 +1,1219 @@
+/* =========================================================
+   INTEGRA EWS HEADER
+   ========================================================= */
+
+.top-utility-bar {
+  height: 38px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #031a35,
+      #062b50,
+      #031a35
+    );
+
+  color: #d9ebf8;
+
+  position: relative;
+
+  z-index: 100;
+}
+
+.utility-inner {
+  height: 100%;
+
+  width: min(1500px, calc(100% - 55px));
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.government-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 10px;
+
+  letter-spacing: 0.15px;
+}
+
+.government-symbol {
+  width: 20px;
+  height: 20px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 15px;
+}
+
+.government-label strong {
+  color: #ffffff;
+
+  font-weight: 800;
+}
+
+.utility-divider {
+  opacity: 0.35;
+}
+
+.utility-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  height: 100%;
+}
+
+.utility-alert-button,
+.utility-language {
+  height: 29px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 0 12px;
+
+  border: 1px solid rgba(122, 191, 231, 0.2);
+
+  border-radius: 7px;
+
+  background: rgba(255,255,255,0.035);
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.utility-alert-button {
+  position: relative;
+}
+
+.utility-alert-button b {
+  position: absolute;
+
+  top: -8px;
+
+  right: -5px;
+
+  min-width: 17px;
+
+  height: 17px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #ff3b30;
+
+  color: #ffffff;
+
+  font-size: 8px;
+}
+
+.utility-language {
+  border: 0;
+
+  background: transparent;
+}
+
+.language-arrow {
+  opacity: 0.65;
+}
+
+.projects-monitored {
+  height: 29px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 0 13px;
+
+  border: 1px solid rgba(38, 180, 245, 0.3);
+
+  border-radius: 18px;
+
+  background: rgba(10, 132, 210, 0.08);
+
+  color: #55c9ff;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.3px;
+}
+
+.projects-monitored strong {
+  color: #ffffff;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   ALERT PANEL
+   ========================================================= */
+
+.alert-panel {
+  position: fixed;
+
+  top: 45px;
+
+  right: 30px;
+
+  z-index: 1000;
+
+  width: 340px;
+
+  padding: 15px;
+
+  border: 1px solid #d8e5ef;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 55px rgba(0, 24, 52, 0.25);
+
+  color: #173858;
+}
+
+.alert-panel-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #e5edf4;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+.alert-panel-header > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.alert-panel-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #ff8a00;
+}
+
+.alert-panel-header button {
+  border: 0;
+
+  background: transparent;
+
+  color: #71879b;
+
+  cursor: pointer;
+}
+
+.alert-panel-item {
+  display: flex;
+
+  gap: 10px;
+
+  padding: 12px 3px;
+
+  border-bottom: 1px solid #edf2f6;
+}
+
+.alert-panel-item:last-child {
+  border-bottom: 0;
+}
+
+.alert-panel-icon {
+  min-width: 30px;
+  height: 30px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 8px;
+
+  background: #eaf6ff;
+
+  color: #087fdb;
+}
+
+.alert-panel-item strong {
+  display: block;
+
+  color: #153c61;
+
+  font-size: 10px;
+}
+
+.alert-panel-item p {
+  margin: 4px 0 0;
+
+  color: #8294a5;
+
+  font-size: 9px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   MAIN HEADER
+   ========================================================= */
+
+.main-header {
+  height: 82px;
+
+  background: #ffffff;
+
+  position: relative;
+
+  z-index: 50;
+
+  border-bottom: 1px solid #e7edf3;
+}
+
+.header-inner {
+  width: min(1500px, calc(100% - 55px));
+
+  height: 100%;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.integra-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+.integra-logo {
+  position: relative;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  gap: 4px;
+}
+
+.logo-column {
+  display: block;
+
+  width: 9px;
+
+  border-radius: 3px 3px 1px 1px;
+
+  background:
+    linear-gradient(
+      to top,
+      #1989dd,
+      #58c8f7
+    );
+}
+
+.logo-column-one {
+  height: 21px;
+}
+
+.logo-column-two {
+  height: 30px;
+}
+
+.logo-column-three {
+  height: 40px;
+
+  background:
+    linear-gradient(
+      to top,
+      #20ae79,
+      #58d979
+    );
+}
+
+.logo-arrow {
+  position: absolute;
+
+  right: -2px;
+
+  top: -3px;
+
+  color: #ff8a00;
+
+  font-size: 19px;
+
+  font-weight: 900;
+}
+
+.integra-brand-text {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.integra-name {
+  color: #0a2f55;
+
+  font-size: 27px;
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: -1px;
+}
+
+.integra-name span {
+  color: #087fdb;
+}
+
+.integra-subtitle {
+  margin-top: 5px;
+
+  color: #70869a;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+   ========================================================= */
+
+.header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.add-project-button,
+.reports-button {
+  height: 39px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 17px;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+
+  font-weight: 850;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.add-project-button {
+  border: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff9900,
+      #ff7200
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 7px 18px rgba(255, 133, 0, 0.2);
+}
+
+.reports-button {
+  border: 0;
+
+  background: #082b50;
+
+  color: #ffffff;
+}
+
+.add-project-button:hover,
+.reports-button:hover {
+  transform: translateY(-1px);
+}
+
+.logout-button {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+
+  place-items: center;
+
+  border: 1px solid #dbe5ed;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #52708b;
+
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  color: #e05252;
+
+  border-color: #f0caca;
+}
+
+
+/* =========================================================
+   PRIMARY NAVIGATION
+   ========================================================= */
+
+.primary-navigation {
+  height: 51px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0875c8,
+      #087ed7,
+      #076dbd
+    );
+
+  position: relative;
+
+  z-index: 40;
+}
+
+.primary-navigation-inner {
+  height: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    1.1fr
+    1.1fr
+    0.9fr
+    0.95fr;
+
+  width: min(1500px, 100%);
+
+  margin: auto;
+}
+
+.primary-nav-item {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border: 0;
+
+  border-right:
+    1px solid rgba(255,255,255,0.13);
+
+  background: transparent;
+
+  color: rgba(255,255,255,0.92);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease;
+}
+
+.primary-nav-item:hover {
+  background: rgba(255,255,255,0.09);
+}
+
+.primary-nav-item.active,
+.primary-nav-item.selected {
+  background: rgba(0, 42, 84, 0.28);
+}
+
+.primary-nav-item.active::after,
+.primary-nav-item.selected::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  bottom: 0;
+
+  height: 3px;
+
+  background: #49c5ff;
+}
+
+.primary-nav-item small {
+  font-size: 10px;
+
+  opacity: 0.92;
+}
+
+
+/* =========================================================
+   LIVE TICKER
+   ========================================================= */
+
+.live-alert-ticker {
+  position: relative;
+
+  z-index: 35;
+
+  height: 54px;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  background: #041d3b;
+
+  color: #d9eafa;
+}
+
+.live-alert-label {
+  position: relative;
+
+  z-index: 5;
+
+  height: 100%;
+
+  min-width: 250px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 0 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff9b00,
+      #ff7200
+    );
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  box-shadow:
+    8px 0 25px rgba(0,0,0,0.15);
+}
+
+.live-alert-icon {
+  font-size: 16px;
+}
+
+.ticker-track {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  white-space: nowrap;
+
+  animation:
+    tickerMove 35s linear infinite;
+
+  padding-left: 25px;
+}
+
+.ticker-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  font-size: 9px;
+}
+
+.ticker-item strong {
+  color: #ffffff;
+}
+
+.ticker-item span {
+  color: #a9c5dc;
+}
+
+.ticker-separator {
+  color: #22a9ec;
+
+  font-size: 13px;
+}
+
+/* Authenticated Ministry header uses the shared IntegRA brand and controls. */
+.ministry-portal {
+  --ministry-site-header-height: 194px;
+}
+
+.ministry-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(6, 31, 58, .08);
+}
+
+.ministry-utility-bar {
+  height: 38px;
+  background: linear-gradient(90deg, #031a35, #062b50, #031a35);
+  color: #d9ebf8;
+}
+
+.ministry-site-header-inner {
+  width: min(1500px, calc(100% - 55px));
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ministry-utility-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #d9ebf8;
+  font-size: 10px;
+  letter-spacing: .15px;
+}
+
+.ministry-utility-brand strong {
+  color: #fff;
+  font-weight: 800;
+}
+
+.ministry-utility-brand span {
+  color: #d9ebf8;
+}
+
+.ministry-brand-header {
+  position: relative;
+  height: 102px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 74% 110%, rgba(19, 141, 203, .12), transparent 44%),
+    linear-gradient(166deg, transparent 74%, rgba(255, 143, 20, .12) 74.3%, transparent 75.5%),
+    linear-gradient(174deg, transparent 78%, rgba(23, 142, 204, .1) 78.3%, transparent 80%),
+    #fff;
+}
+
+.ministry-brand-header-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.ministry-brand-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.ministry-brand-actions .reports-button {
+  white-space: nowrap;
+}
+
+.ministry-account-button {
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 5px 7px;
+  border: 0;
+  background: transparent;
+  color: #0a2f55;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.ministry-account-button>svg:first-child {
+  flex: 0 0 auto;
+  color: #0a4775;
+}
+
+.ministry-account-button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ministry-header-notifications {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  color: #0a668a;
+  cursor: pointer;
+}
+
+.ministry-header-notifications b {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 3px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e75147;
+  color: #fff;
+  font-size: 9px;
+}
+
+.ministry-live-alert-ticker {
+  height: 54px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  background: #041d3b;
+  color: #d9eafa;
+}
+
+.ministry-live-alert-label {
+  z-index: 1;
+  flex: 0 0 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 18px;
+  background: linear-gradient(135deg, #ff9b00, #ff7200);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  white-space: nowrap;
+  box-shadow: 8px 0 25px rgba(0, 0, 0, .15);
+}
+
+.ministry-ticker-window {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.ministry-ticker-track,
+.ministry-ticker-group {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  flex: 0 0 auto;
+}
+
+.ministry-ticker-track {
+  min-width: max-content;
+  animation: ministryTickerMove 44s linear infinite;
+  will-change: transform;
+}
+
+.ministry-ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.ministry-ticker-track.ministry-ticker-static {
+  animation: none;
+}
+
+.ministry-ticker-group {
+  gap: 18px;
+  padding: 0 22px;
+}
+
+.ministry-ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #a9c5dc;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.ministry-ticker-item strong {
+  color: #fff;
+}
+
+.ministry-ticker-risk {
+  font-weight: 900;
+}
+
+.ministry-ticker-risk.high {
+  color: #ff5a54;
+}
+
+.ministry-ticker-risk.medium {
+  color: #ffae27;
+}
+
+.ministry-ticker-risk.low {
+  color: #e8d744;
+}
+
+.ministry-ticker-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #f1d532;
+}
+
+.ministry-ticker-dot.high {
+  background: #ef4848;
+}
+
+.ministry-ticker-dot.medium {
+  background: #f3a21b;
+}
+
+.ministry-ticker-dot.low {
+  background: #e8d744;
+}
+
+.ministry-ticker-separator {
+  color: #22a9ec;
+}
+
+@keyframes ministryTickerMove {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes tickerMove {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-45%);
+  }
+
+}
+
+@media (max-width: 900px) {
+  .ministry-portal {
+    --ministry-site-header-height: 222px;
+  }
+
+  .ministry-brand-header {
+    height: 130px;
+  }
+
+  .ministry-brand-header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+  }
+
+  .ministry-brand-actions {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ministry-portal {
+    --ministry-site-header-height: 224px;
+  }
+
+  .ministry-site-header-inner {
+    width: calc(100% - 24px);
+  }
+
+  .ministry-utility-brand {
+    gap: 5px;
+    font-size: 8px;
+  }
+
+  .ministry-utility-brand span {
+    max-width: 145px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .ministry-utility-bar .utility-actions {
+    gap: 2px;
+  }
+
+  .ministry-utility-bar .utility-language {
+    padding: 0 5px;
+    font-size: 8px;
+  }
+
+  .ministry-utility-bar .projects-monitored {
+    gap: 4px;
+    padding: 0 7px;
+    font-size: 7px;
+  }
+
+  .ministry-utility-bar .projects-monitored strong {
+    font-size: 10px;
+  }
+
+  .ministry-brand-header {
+    height: 132px;
+  }
+
+  .ministry-brand-header-inner {
+    gap: 12px;
+  }
+
+  .ministry-brand-header .integra-name {
+    font-size: 23px;
+  }
+
+  .ministry-brand-header .integra-subtitle {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+
+  .ministry-brand-actions {
+    gap: 5px;
+  }
+
+  .ministry-brand-actions .reports-button {
+    height: 34px;
+    gap: 5px;
+    padding: 0 8px;
+    font-size: 8px;
+  }
+
+  .ministry-brand-actions .reports-button svg:last-child {
+    display: none;
+  }
+
+  .ministry-account-button {
+    max-width: 155px;
+    gap: 4px;
+    padding: 3px;
+    font-size: 9px;
+  }
+
+  .ministry-account-button>svg:first-child {
+    width: 27px;
+  }
+
+  .ministry-live-alert-ticker {
+    height: 54px;
+  }
+
+  .ministry-live-alert-label {
+    flex-basis: 145px;
+    gap: 5px;
+    padding: 0 7px;
+    font-size: 7px;
+  }
+
+  .ministry-ticker-group {
+    gap: 12px;
+    padding: 0 15px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .government-label span:not(.utility-divider) {
+    display: none;
+  }
+
+  .header-inner {
+    width: calc(100% - 30px);
+  }
+
+  .primary-nav-item {
+    font-size: 9px;
+  }
+
+  .primary-nav-item small {
+    display: none;
+  }
+
+  .integra-name {
+    font-size: 23px;
+  }
+
+  .add-project-button,
+  .reports-button {
+    padding: 0 10px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .top-utility-bar {
+    height: 34px;
+  }
+
+  .utility-inner {
+    width: calc(100% - 20px);
+  }
+
+  .government-label {
+    font-size: 8px;
+  }
+
+  .projects-monitored {
+    display: none;
+  }
+
+  .main-header {
+    height: 72px;
+  }
+
+  .integra-logo {
+    width: 37px;
+    height: 37px;
+  }
+
+  .integra-name {
+    font-size: 20px;
+  }
+
+  .integra-subtitle {
+    font-size: 6px;
+
+    letter-spacing: 1px;
+  }
+
+  .header-actions {
+    gap: 5px;
+  }
+
+  .add-project-button,
+  .reports-button {
+    width: 38px;
+
+    padding: 0;
+
+    font-size: 0;
+  }
+
+  .add-project-button svg,
+  .reports-button svg {
+    width: 17px;
+  }
+
+  .logout-button {
+    width: 35px;
+  }
+
+  .primary-navigation {
+    overflow-x: auto;
+  }
+
+  .primary-navigation-inner {
+    width: 800px;
+  }
+
+  .live-alert-label {
+    min-width: 185px;
+
+    font-size: 8px;
+  }
+
+}

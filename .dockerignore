@@ -1,0 +1,14 @@
+.git
+.github
+.vscode
+node_modules
+dist
+.env
+.env.*
+!.env.example
+backend/*.db
+backend/temp_data.json
+backend/__pycache__
+backend/data/projects_normalized.csv
+Paimana
+*.log

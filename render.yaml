@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: integra-ews
+    runtime: docker
+    plan: starter
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: PAIMANA_ENVIRONMENT
+        value: production
+      - key: PAIMANA_AUTH_SECRET
+        generateValue: true
+      - key: PAIMANA_DB_PATH
+        value: /var/data/paimana.db
+      - key: PAIMANA_ENABLE_DEMO_ADMIN
+        value: "false"
+      - key: PAIMANA_ENABLE_DEMO_MINISTRIES
+        value: "false"
+      - key: PAIMANA_ADMIN_USERNAME
+        sync: false
+      - key: PAIMANA_ADMIN_PASSWORD_HASH
+        sync: false
+      - key: PAIMANA_DEMO_USERNAME
+        sync: false
+      - key: PAIMANA_DEMO_PASSWORD
+        sync: false
+      - key: PAIMANA_DEMO_MINISTRY
+        sync: false
+    disk:
+      name: integra-ews-data
+      mountPath: /var/data
+      sizeGB: 1

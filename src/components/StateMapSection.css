@@ -1,0 +1,872 @@
+/* =========================================================
+   STATE MAP SECTION
+   ========================================================= */
+
+.state-map-section {
+  width: 100%;
+  min-height: 700px;
+  padding: 58px 0 0;
+  background: #eef6fc;
+  color: #103d64;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.state-map-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  padding: 0 28px 22px;
+}
+
+.page-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.page-title-row h1 {
+  margin: 0;
+  color: #123f67;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.as-of-date {
+  color: #8ba4b9;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.state-map-page-header p {
+  margin: 12px 0 0;
+  color: #6685a0;
+  font-size: 13px;
+}
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.state-search-box {
+  min-width: 320px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 13px;
+
+  background: #ffffff;
+  border: 1px solid #cbddea;
+  border-radius: 12px;
+
+  color: #163f62;
+  font-size: 12px;
+  font-weight: 700;
+
+  box-shadow: 0 5px 16px rgba(32, 82, 120, 0.08);
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  cursor: pointer;
+}
+
+.state-search-box:hover {
+  border-color: #71a9d2;
+  box-shadow: 0 7px 20px rgba(32, 82, 120, 0.13);
+  transform: translateY(-1px);
+}
+
+.state-search-box:focus-within {
+  border-color: #1677d2;
+  box-shadow: 0 0 0 3px rgba(22, 119, 210, 0.14), 0 7px 20px rgba(32, 82, 120, 0.1);
+}
+
+.search-icon {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  place-items: center;
+  border-radius: 8px;
+  background: #eef7ff;
+  color: #7694ac;
+  font-size: 17px;
+}
+
+.state-search-box select {
+  min-width: 0;
+  flex: 1;
+  height: 100%;
+  padding: 0 2px;
+  border: 0;
+  outline: 0;
+  appearance: none;
+  background: transparent;
+  color: #123f65;
+  font: inherit;
+  cursor: pointer;
+}
+
+.search-arrow {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  place-items: center;
+  border-radius: 8px;
+  background: #f1f7fc;
+  color: #17639b;
+  font-size: 15px;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.state-search-box:hover .search-arrow {
+  background: #e3f1fc;
+  transform: translateY(1px);
+}
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.state-map-layout {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 48% 52%;
+
+  background: #ffffff;
+
+  border-top: 1px solid #d8e5ef;
+  border-right: 1px solid #d8e5ef;
+  border-bottom: 1px solid #d8e5ef;
+}
+
+/* =========================================================
+   LEFT
+   ========================================================= */
+
+.state-details-panel {
+  min-width: 0;
+  background: #ffffff;
+  border-right: 1px solid #dce7ef;
+}
+
+.state-card-header {
+  min-height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px 26px;
+
+  background: linear-gradient(
+    135deg,
+    #155b8e,
+    #176394
+  );
+
+  color: #ffffff;
+}
+
+.state-card-header h2 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.state-location {
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 10px;
+  color: #d9edff;
+}
+
+.live-status-dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #52e0a0;
+
+  box-shadow:
+    0 0 0 5px rgba(82, 224, 160, 0.12),
+    0 0 12px rgba(82, 224, 160, 0.7);
+}
+
+/* =========================================================
+   INFO
+   ========================================================= */
+
+.state-info-content {
+  padding: 26px 22px 18px;
+}
+
+.info-group {
+  margin-bottom: 20px;
+}
+
+.info-label {
+  margin-bottom: 9px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #67829a;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.sector-tag {
+  padding: 7px 11px;
+
+  background: #e6f3fc;
+  color: #0871b9;
+
+  border-radius: 5px;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.ministry-tag {
+  padding: 7px 10px;
+
+  background: #f0f4f7;
+  color: #60788d;
+
+  border-radius: 5px;
+
+  font-size: 8.5px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   METRICS
+   ========================================================= */
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid #e0e8ef;
+}
+
+.metric-card {
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px;
+
+  border-right: 1px solid #e0e8ef;
+  border-bottom: 1px solid #e0e8ef;
+}
+
+.metric-card:nth-child(3n) {
+  border-right: none;
+}
+
+.metric-icon {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #e7f4fd;
+  color: #0784d5;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.metric-label {
+  margin-bottom: 5px;
+
+  color: #7790a5;
+
+  font-size: 8px;
+  line-height: 1.3;
+}
+
+.metric-value {
+  color: #0c416c;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  line-height: 1.25;
+}
+
+/* =========================================================
+   QUICK STATES
+   ========================================================= */
+
+.quick-state-section {
+  padding: 16px 22px 20px;
+}
+
+.quick-title {
+  margin-bottom: 10px;
+}
+
+.quick-state-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.quick-state {
+  padding: 8px 13px;
+
+  background: #ffffff;
+
+  border: 1px solid #d7e3ec;
+  border-radius: 18px;
+
+  color: #58748b;
+
+  font-size: 8.5px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.quick-state:hover {
+  background: #eef8ff;
+  border-color: #8bc7ed;
+  color: #0b6ba5;
+}
+
+.quick-state.active {
+  background: #0f70b5;
+  border-color: #0f70b5;
+  color: #ffffff;
+}
+
+/* =========================================================
+   MAP PANEL
+   ========================================================= */
+
+.india-map-panel {
+  min-width: 0;
+  background: #fafdff;
+}
+
+.map-header {
+  height: 98px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 22px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #dce8f0;
+}
+
+.map-eyebrow {
+  margin-bottom: 8px;
+
+  color: #0875bd;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 1.3px;
+}
+
+.map-header h2 {
+  margin: 0;
+
+  color: #0d3c63;
+
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.live-data-pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 13px;
+
+  background: #f6fffb;
+
+  border: 1px solid #ccefe0;
+  border-radius: 20px;
+
+  color: #159b6b;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.live-data-pill span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #16b979;
+
+  box-shadow: 0 0 8px rgba(22, 185, 121, 0.6);
+}
+
+/* =========================================================
+   MAP CANVAS
+   ========================================================= */
+
+.map-canvas {
+  position: relative;
+
+  height: 590px;
+
+  overflow: hidden;
+
+  background-color: #fafdff;
+
+  background-image:
+    linear-gradient(
+      rgba(88, 142, 177, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(88, 142, 177, 0.08) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+}
+
+/* =========================================================
+   CRITICAL FIX
+   PREVENT GLOBAL CSS FROM MAKING MAP BLACK
+   ========================================================= */
+
+.map-canvas svg .india-state {
+  fill: var(--state-fill) !important;
+
+  stroke: #ffffff !important;
+
+  stroke-width: 0.8px !important;
+
+  outline: none !important;
+
+  transition:
+    fill 0.18s ease,
+    stroke 0.18s ease;
+}
+
+.map-canvas svg .india-state:hover {
+  fill: var(--state-hover) !important;
+
+  stroke: #07558d !important;
+
+  stroke-width: 1.4px !important;
+
+  cursor: pointer;
+}
+
+/* =========================================================
+   STATE LABELS
+   ========================================================= */
+
+.state-map-label {
+  font-family:
+    Inter,
+    Arial,
+    sans-serif;
+
+  font-size: 5.2px;
+
+  font-weight: 700;
+
+  fill: #173b5f !important;
+
+  stroke: #ffffff;
+
+  stroke-width: 1.5px;
+
+  paint-order: stroke;
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+.state-map-label.selected {
+  fill: #ffffff !important;
+
+  stroke: #1677d2;
+
+  stroke-width: 1.2px;
+
+  font-weight: 800;
+}
+
+/* =========================================================
+   CONTROLS
+   ========================================================= */
+
+.map-controls {
+  position: absolute;
+
+  left: 20px;
+  top: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #d6e3ec;
+  border-radius: 9px;
+
+  box-shadow:
+    0 6px 18px rgba(24, 72, 108, 0.08);
+
+  z-index: 10;
+}
+
+.map-control-button {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-bottom: 1px solid #e2ebf1;
+
+  background: #ffffff;
+
+  color: #1b679c;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.map-control-button:last-child {
+  border-bottom: none;
+}
+
+.map-control-button:hover {
+  background: #edf7fd;
+}
+
+/* =========================================================
+   COMPASS
+   ========================================================= */
+
+.map-compass {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  width: 48px;
+  height: 48px;
+
+  color: #7291a8;
+
+  font-size: 6px;
+  font-weight: 700;
+
+  z-index: 10;
+}
+
+.map-compass .north {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map-compass .south {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map-compass .east {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.map-compass .west {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.compass-arrow {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  color: #2482bb;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   HOVER CARD
+   ========================================================= */
+
+.map-hover-card {
+  position: absolute;
+
+  top: 82px;
+  right: 20px;
+
+  width: 190px;
+
+  padding: 14px 15px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.97
+  );
+
+  border: 1px solid #cfe0eb;
+  border-radius: 10px;
+
+  box-shadow:
+    0 12px 30px rgba(
+      17,
+      60,
+      94,
+      0.15
+    );
+
+  z-index: 20;
+
+  pointer-events: none;
+}
+
+.hover-card-title {
+  color: #0e4b76;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.hover-card-divider {
+  height: 1px;
+
+  margin: 10px 0;
+
+  background: #e3edf3;
+}
+
+.hover-stat {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 7px;
+
+  color: #7890a3;
+
+  font-size: 9px;
+}
+
+.hover-stat strong {
+  color: #0e5e92;
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   RISK LEGEND
+   ========================================================= */
+
+.risk-legend {
+  position: absolute;
+
+  bottom: 18px;
+  right: 18px;
+
+  width: 105px;
+
+  padding: 11px 12px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.94
+  );
+
+  border: 1px solid #d6e3ec;
+  border-radius: 8px;
+
+  box-shadow:
+    0 5px 18px rgba(
+      30,
+      77,
+      108,
+      0.08
+    );
+
+  z-index: 10;
+}
+
+.legend-title {
+  margin-bottom: 8px;
+
+  color: #6c879c;
+
+  font-size: 7px;
+  font-weight: 900;
+
+  letter-spacing: 0.8px;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-top: 6px;
+
+  color: #6e8496;
+
+  font-size: 8px;
+}
+
+.legend-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+}
+
+.legend-dot.low {
+  background: #36bd83;
+}
+
+.legend-dot.medium {
+  background: #f1b94b;
+}
+
+.legend-dot.high {
+  background: #e96b6b;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .state-map-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .state-details-panel {
+    border-right: none;
+    border-bottom: 1px solid #dce7ef;
+  }
+
+  .state-map-page-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .state-search-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .state-map-section {
+    padding-top: 30px;
+  }
+
+  .state-map-page-header {
+    padding: 0 15px 18px;
+  }
+
+  .page-title-row {
+    flex-wrap: wrap;
+  }
+
+  .page-title-row h1 {
+    font-size: 24px;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .metric-card:nth-child(3n) {
+    border-right: 1px solid #e0e8ef;
+  }
+
+  .metric-card:nth-child(even) {
+    border-right: none;
+  }
+
+  .map-header {
+    padding: 0 14px;
+  }
+
+  .map-header h2 {
+    font-size: 18px;
+  }
+
+  .live-data-pill {
+    display: none;
+  }
+
+  .map-canvas {
+    height: 470px;
+  }
+}

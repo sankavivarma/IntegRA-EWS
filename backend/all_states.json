@@ -1,0 +1,642 @@
+{
+  "Maharashtra": {
+    "name": "Maharashtra",
+    "date": "July, 2026",
+    "projectCount": 152,
+    "originalCost": "400,787.00",
+    "revisedCost": "379,809.79",
+    "expenditure": "258,703.27",
+    "completed": 6,
+    "newlyAdded": 3,
+    "aiRisk": "Medium Risk",
+    "aiScore": 82,
+    "topSectors": [
+      "Roads & Highways",
+      "Coal",
+      "Railways"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Coal",
+      "Ministry of Railways"
+    ],
+    "color": "#c0392b"
+  },
+  "Uttar Pradesh": {
+    "name": "Uttar Pradesh",
+    "date": "July, 2026",
+    "projectCount": 139,
+    "originalCost": "225,524.00",
+    "revisedCost": "233,056.12",
+    "expenditure": "117,983.90",
+    "completed": 5,
+    "newlyAdded": 2,
+    "aiRisk": "Medium Risk",
+    "aiScore": 84,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Oil & Gas"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Petroleum & Natural Gas"
+    ],
+    "color": "#c0392b"
+  },
+  "Madhya Pradesh": {
+    "name": "Madhya Pradesh",
+    "date": "July, 2026",
+    "projectCount": 138,
+    "originalCost": "285,938.00",
+    "revisedCost": "328,686.85",
+    "expenditure": "147,815.91",
+    "completed": 5,
+    "newlyAdded": 2,
+    "aiRisk": "Medium Risk",
+    "aiScore": 71,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Coal"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Power"
+    ],
+    "color": "#c0392b"
+  },
+  "Odisha": {
+    "name": "Odisha",
+    "date": "July, 2026",
+    "projectCount": 102,
+    "originalCost": "157,412.00",
+    "revisedCost": "182,916.00",
+    "expenditure": "115,181.25",
+    "completed": 4,
+    "newlyAdded": 2,
+    "aiRisk": "Medium Risk",
+    "aiScore": 79,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Coal"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Coal"
+    ],
+    "color": "#d65d5b"
+  },
+  "Karnataka": {
+    "name": "Karnataka",
+    "date": "July, 2026",
+    "projectCount": 101,
+    "originalCost": "213,152.00",
+    "revisedCost": "231,787.86",
+    "expenditure": "150,305.69",
+    "completed": 4,
+    "newlyAdded": 2,
+    "aiRisk": "Medium Risk",
+    "aiScore": 71,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Oil & Gas"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Power"
+    ],
+    "color": "#d65d5b"
+  },
+  "Chhattisgarh": {
+    "name": "Chhattisgarh",
+    "date": "July, 2026",
+    "projectCount": 99,
+    "originalCost": "174,856.00",
+    "revisedCost": "189,885.04",
+    "expenditure": "77,084.54",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 80,
+    "topSectors": [
+      "Roads & Highways",
+      "Coal",
+      "Railways"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Coal",
+      "Ministry of Railways"
+    ],
+    "color": "#d65d5b"
+  },
+  "Assam": {
+    "name": "Assam",
+    "date": "July, 2026",
+    "projectCount": 99,
+    "originalCost": "127,482.00",
+    "revisedCost": "134,770.09",
+    "expenditure": "73,294.77",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 84,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Oil & Gas"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Petroleum & Natural Gas"
+    ],
+    "color": "#d65d5b"
+  },
+  "Gujarat": {
+    "name": "Gujarat",
+    "date": "July, 2026",
+    "projectCount": 92,
+    "originalCost": "192,371.00",
+    "revisedCost": "255,118.85",
+    "expenditure": "127,488.96",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 80,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Transmission & Distribution"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Power"
+    ],
+    "color": "#d65d5b"
+  },
+  "Rajasthan": {
+    "name": "Rajasthan",
+    "date": "July, 2026",
+    "projectCount": 90,
+    "originalCost": "177,658.00",
+    "revisedCost": "188,838.02",
+    "expenditure": "78,714.78",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 80,
+    "topSectors": [
+      "Roads & Highways",
+      "Transmission & Distribution",
+      "Railways"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Power",
+      "Ministry of Railways"
+    ],
+    "color": "#d65d5b"
+  },
+  "Andhra Pradesh": {
+    "name": "Andhra Pradesh",
+    "date": "July, 2026",
+    "projectCount": 90,
+    "originalCost": "126,332.00",
+    "revisedCost": "140,769.11",
+    "expenditure": "69,195.92",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 76,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Transmission & Distribution"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Power"
+    ],
+    "color": "#d65d5b"
+  },
+  "Tamil Nadu": {
+    "name": "Tamil Nadu",
+    "date": "July, 2026",
+    "projectCount": 89,
+    "originalCost": "267,378.00",
+    "revisedCost": "284,695.18",
+    "expenditure": "99,343.80",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 75,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Oil & Gas"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Petroleum & Natural Gas"
+    ],
+    "color": "#d65d5b"
+  },
+  "Bihar": {
+    "name": "Bihar",
+    "date": "July, 2026",
+    "projectCount": 87,
+    "originalCost": "178,359.00",
+    "revisedCost": "175,281.94",
+    "expenditure": "64,826.70",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 75,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Oil & Gas"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Petroleum & Natural Gas"
+    ],
+    "color": "#d65d5b"
+  },
+  "West Bengal": {
+    "name": "West Bengal",
+    "date": "July, 2026",
+    "projectCount": 84,
+    "originalCost": "107,590.00",
+    "revisedCost": "118,157.12",
+    "expenditure": "49,745.21",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 80,
+    "topSectors": [
+      "Roads & Highways",
+      "Coal",
+      "Oil & Gas"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Coal",
+      "Ministry of Petroleum & Natural Gas"
+    ],
+    "color": "#d65d5b"
+  },
+  "Jharkhand": {
+    "name": "Jharkhand",
+    "date": "July, 2026",
+    "projectCount": 83,
+    "originalCost": "102,199.00",
+    "revisedCost": "108,710.56",
+    "expenditure": "40,674.11",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 80,
+    "topSectors": [
+      "Roads & Highways",
+      "Coal",
+      "Railways"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Coal",
+      "Ministry of Railways"
+    ],
+    "color": "#d65d5b"
+  },
+  "Telangana": {
+    "name": "Telangana",
+    "date": "July, 2026",
+    "projectCount": 76,
+    "originalCost": "193,826.00",
+    "revisedCost": "284,300.82",
+    "expenditure": "194,422.55",
+    "completed": 3,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 71,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Oil & Gas"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Power"
+    ],
+    "color": "#e67e22"
+  },
+  "Kerala": {
+    "name": "Kerala",
+    "date": "July, 2026",
+    "projectCount": 59,
+    "originalCost": "140,719.00",
+    "revisedCost": "153,945.99",
+    "expenditure": "87,349.49",
+    "completed": 2,
+    "newlyAdded": 1,
+    "aiRisk": "Medium Risk",
+    "aiScore": 71,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Oil & Gas"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Petroleum & Natural Gas"
+    ],
+    "color": "#e67e22"
+  },
+  "Delhi": {
+    "name": "Delhi",
+    "date": "July, 2026",
+    "projectCount": 33,
+    "originalCost": "158,402.00",
+    "revisedCost": "163,856.08",
+    "expenditure": "80,778.42",
+    "completed": 1,
+    "newlyAdded": 0,
+    "aiRisk": "Medium Risk",
+    "aiScore": 78,
+    "topSectors": [
+      "Roads & Highways",
+      "Urban Public Transport",
+      "Healthcare"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Housing & Urban Affairs",
+      "Ministry of Health & Family Welfare"
+    ],
+    "color": "#f39c12"
+  },
+  "Manipur": {
+    "name": "Manipur",
+    "date": "July, 2026",
+    "projectCount": 32,
+    "originalCost": "25,798.00",
+    "revisedCost": "33,066.74",
+    "expenditure": "24,944.24",
+    "completed": 1,
+    "newlyAdded": 0,
+    "aiRisk": "High Risk",
+    "aiScore": 66,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Education"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Ministry of Civil Aviation"
+    ],
+    "color": "#f39c12"
+  },
+  "Jammu & Kashmir": {
+    "name": "Jammu & Kashmir",
+    "date": "July, 2026",
+    "projectCount": 32,
+    "originalCost": "33,265.00",
+    "revisedCost": "32,508.52",
+    "expenditure": "18,645.29",
+    "completed": 1,
+    "newlyAdded": 0,
+    "aiRisk": "Medium Risk",
+    "aiScore": 74,
+    "topSectors": [
+      "Roads & Highways",
+      "Oil & Gas",
+      "Healthcare"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Petroleum & Natural Gas",
+      "Ministry of Health & Family Welfare"
+    ],
+    "color": "#f39c12"
+  },
+  "Uttarakhand": {
+    "name": "Uttarakhand",
+    "date": "July, 2026",
+    "projectCount": 31,
+    "originalCost": "16,307.00",
+    "revisedCost": "15,932.39",
+    "expenditure": "6,305.09",
+    "completed": 1,
+    "newlyAdded": 0,
+    "aiRisk": "Medium Risk",
+    "aiScore": 81,
+    "topSectors": [
+      "Roads & Highways",
+      "Healthcare",
+      "Education"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Labour and Employment",
+      "Department of Higher Education"
+    ],
+    "color": "#f39c12"
+  },
+  "Punjab": {
+    "name": "Punjab",
+    "date": "July, 2026",
+    "projectCount": 21,
+    "originalCost": "20,808.00",
+    "revisedCost": "25,122.40",
+    "expenditure": "14,669.36",
+    "completed": 0,
+    "newlyAdded": 0,
+    "aiRisk": "Medium Risk",
+    "aiScore": 72,
+    "topSectors": [
+      "Roads & Highways",
+      "Railways",
+      "Education"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Department of Higher Education"
+    ],
+    "color": "#f9e79f"
+  },
+  "Sikkim": {
+    "name": "Sikkim",
+    "date": "July, 2026",
+    "projectCount": 11,
+    "originalCost": "14,198.00",
+    "revisedCost": "18,667.25",
+    "expenditure": "14,745.22",
+    "completed": 0,
+    "newlyAdded": 0,
+    "aiRisk": "High Risk",
+    "aiScore": 52,
+    "topSectors": [
+      "Roads & Highways",
+      "Education",
+      "Transmission & Distribution"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Power",
+      "Department of Higher Education"
+    ],
+    "color": "#f9e79f"
+  },
+  "Meghalaya": {
+    "name": "Meghalaya",
+    "date": "July, 2026",
+    "projectCount": 9,
+    "originalCost": "5,649.00",
+    "revisedCost": "4,638.83",
+    "expenditure": "1,939.81",
+    "completed": 0,
+    "newlyAdded": 0,
+    "aiRisk": "Medium Risk",
+    "aiScore": 83,
+    "topSectors": [
+      "Roads & Highways",
+      "Telecommunication",
+      "Education"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Department of Telecommunications",
+      "Department of Higher Education"
+    ],
+    "color": "#f9e79f"
+  },
+  "Himachal Pradesh": {
+    "name": "Himachal Pradesh",
+    "date": "July, 2026",
+    "projectCount": 9,
+    "originalCost": "6,301.00",
+    "revisedCost": "7,180.57",
+    "expenditure": "3,508.03",
+    "completed": 0,
+    "newlyAdded": 0,
+    "aiRisk": "Medium Risk",
+    "aiScore": 82,
+    "topSectors": [
+      "Roads & Highways",
+      "Education"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Department of Higher Education"
+    ],
+    "color": "#f9e79f"
+  },
+  "Tripura": {
+    "name": "Tripura",
+    "date": "July, 2026",
+    "projectCount": 8,
+    "originalCost": "6,100.00",
+    "revisedCost": "6,022.51",
+    "expenditure": "2,004.65",
+    "completed": 0,
+    "newlyAdded": 0,
+    "aiRisk": "Low Risk",
+    "aiScore": 92,
+    "topSectors": [
+      "Roads & Highways",
+      "Oil & Gas"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Petroleum & Natural Gas"
+    ],
+    "color": "#f9e79f"
+  },
+  "Ladakh": {
+    "name": "Ladakh",
+    "date": "July, 2026",
+    "projectCount": 3,
+    "originalCost": "1,231.00",
+    "revisedCost": "1,391.00",
+    "expenditure": "751.75",
+    "completed": 0,
+    "newlyAdded": 0,
+    "aiRisk": "High Risk",
+    "aiScore": 67,
+    "topSectors": [
+      "Roads & Highways",
+      "Healthcare",
+      "Aviation & Aviation Infrastructure"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Health & Family Welfare",
+      "Ministry of Civil Aviation"
+    ],
+    "color": "#f9e79f"
+  },
+  "Haryana": {
+    "name": "Haryana",
+    "date": "July, 2026",
+    "projectCount": 3,
+    "originalCost": "2,464.00",
+    "revisedCost": "2,649.45",
+    "expenditure": "1,309.41",
+    "completed": 0,
+    "newlyAdded": 0,
+    "aiRisk": "Medium Risk",
+    "aiScore": 76,
+    "topSectors": [
+      "Roads & Highways",
+      "Logistics Infrastructure",
+      "Healthcare"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Health & Family Welfare",
+      "Department for Promotion of Industry & Internal Trade"
+    ],
+    "color": "#f9e79f"
+  },
+  "Goa": {
+    "name": "Goa",
+    "date": "July, 2026",
+    "projectCount": 3,
+    "originalCost": "8,029.00",
+    "revisedCost": "8,875.38",
+    "expenditure": "4,367.58",
+    "completed": 0,
+    "newlyAdded": 0,
+    "aiRisk": "Low Risk",
+    "aiScore": 90,
+    "topSectors": [
+      "Telecommunication",
+      "Roads & Highways",
+      "Railways"
+    ],
+    "topMinistries": [
+      "Ministry of Road Transport & Highways",
+      "Ministry of Railways",
+      "Department of Telecommunications"
+    ],
+    "color": "#f9e79f"
+  }
+}
