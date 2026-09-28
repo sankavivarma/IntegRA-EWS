@@ -77,30 +77,40 @@ base URL (including `/api`) when building the frontend.
 
 ### Deploy frontend and backend together on Render
 
-The repository includes a Render Blueprint and Dockerfile for a single web
-service. The Docker image builds the React frontend and serves it from FastAPI;
-the frontend calls the API through the same origin. The Blueprint provisions
-a persistent disk for SQLite ministry accounts, alerts, notifications, and
-prediction history, and generates a stable authentication secret. This
-configuration uses Render's paid Starter service because persistent disks are
-not available on free instances.
+The repository includes a Render Blueprint and Dockerfile for a single Free
+web service. The Docker image builds the React frontend and serves it from
+FastAPI; the frontend calls the API through the same origin. The Blueprint
+generates a stable authentication secret and stores SQLite at
+`/var/data/paimana.db` on the service's ephemeral filesystem. The local
+`backend/paimana.db` is excluded from Git and the Docker build context because
+it contains Ministry account records and password hashes. On first startup,
+the service creates a fresh database and imports projects from the bundled CSV.
+
+This Free configuration is intended for scheduled SIH demonstrations, not
+persistent operation. Render may spin down the service after 15 minutes without
+traffic, and its filesystem is reset on spin-down, restart, or redeploy. Any
+Ministry accounts, added projects, predictions, alerts, notifications, and
+alert responses created at runtime may therefore be lost. Keep demo data
+recreatable and reinitialize it after a restart when needed.
 
 1. Push this repository to GitHub.
 2. In Render, select **New → Blueprint**, connect the repository, and deploy
-   the `render.yaml` Blueprint. Configure a private Admin username and password
-   hash when prompted. The Blueprint disables the public demo Admin and Ministry
-   accounts for production.
+   the `render.yaml` Blueprint. It creates one Free Web Service and no
+   persistent disk. Configure a private Admin username and password hash when
+   prompted. The Blueprint disables the public demo Admin and Ministry accounts.
 3. To enable Ministry sign-in, configure one initial account with
    `PAIMANA_DEMO_USERNAME`, `PAIMANA_DEMO_PASSWORD`, and
    `PAIMANA_DEMO_MINISTRY` as private environment variables before the service
    starts. The Ministry value must match the project catalog. The app creates
    this account on startup; keep the username unique and do not reuse a demo
    account name.
-4. Wait for the `/api/health` check to pass, then open the service URL.
+4. Wait for the `/api/health` check to pass, then open the service URL. The Free
+   service can take about a minute to start after an idle spin-down.
 
-The CSV project dataset is included in the image and is imported into SQLite
-when the service starts for the first time. To enable live Gemini responses,
-add `GEMINI_API_KEY` in the Render service environment settings.
+The CSV project dataset is included in the image and is imported into the fresh
+SQLite database when the service starts. The existing local SQLite database is
+not deployed. To enable live Gemini responses, add `GEMINI_API_KEY` in the
+Render service environment settings.
 
 Before deploying, generate the Admin password hash locally with:
 

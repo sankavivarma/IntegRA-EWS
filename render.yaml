@@ -2,7 +2,7 @@ services:
   - type: web
     name: integra-ews
     runtime: docker
-    plan: starter
+    plan: free
     region: oregon
     dockerfilePath: ./Dockerfile
     dockerContext: .
@@ -28,7 +28,3 @@ services:
         sync: false
       - key: PAIMANA_DEMO_MINISTRY
         sync: false
-    disk:
-      name: integra-ews-data
-      mountPath: /var/data
-      sizeGB: 1
