@@ -3,7 +3,7 @@ FROM node:22-bookworm-slim AS frontend-build
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
-ENV VITE_ENABLE_DEMO_CREDENTIALS=false
+ENV VITE_ENABLE_DEMO_CREDENTIALS=true
 COPY index.html vite.config.js ./
 COPY public ./public
 COPY src ./src
